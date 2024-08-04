@@ -13,6 +13,10 @@
 
 body {
     background-color: %CL_BODY_BACKGROUND%;
+    background-image: url(%IMG_SCHOOL_BACKGROUND%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: SourceSansProRegular;
     font-size: large;
     color: %CL_TEXT%;

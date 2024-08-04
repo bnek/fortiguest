@@ -205,14 +205,14 @@
                     "description": "Used on the login page on small screen devices",
                     "tag": "%IMG_LOGO_MEDIUM%",
                     "file_name": "MediumLogo.png",
-                    "dimensions": "170x70"
+                    "dimensions": "170x63"
                 },
                 {
                     "label": "Company logo small",
                     "description": "Used on the login page on small screen devices",
                     "tag": "%IMG_LOGO_SMALL%",
                     "file_name": "SmallLogo.png",
-                    "dimensions": "170x70"
+                    "dimensions": "170x63"
                 },
                 {
                     "label": "Apple iOS icon",
@@ -263,6 +263,12 @@
                     "tag": "%IMG_FACEBOOK%",
                     "file_name": "facebook_50.png",
                     "dimensions": "50x50"
+                },
+                {
+                    "label": "School Background",
+                    "tag": "%IMG_SCHOOL_BACKGROUND%",
+                    "file_name": "CAC-Ariel.jpg",
+                    "dimensions": "1920x1080"
                 }
             ]
         }
