@@ -1,0 +1,88 @@
+<nav class="navbar navbar-default hidden-sm hidden-xs" role="navigation">
+    <div class="topBar"></div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a %LINK_TO_OPTIONAL_HELP%>Help</a></li>
+    </ul>
+</nav>
+
+<nav class="navbar navbar-default hidden-xs hidden-md hidden-lg" role="navigation">
+    <div class="topBar"></div>
+    <div class="navbar-brand"><img src="%IMG_LOGO_MEDIUM%" class="img-responsive"/></div>
+    %NAVIGATION_BAR%
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-md hidden-lg mobileNav" role="navigation">
+    <div class="navbar-brand"><img src="%IMG_LOGO_SMALL%" class="img-responsive"/></div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div id="navbarCollapse" class="collapse navbar-collapse">%NAVIGATION_BAR%</div>
+</nav>
+
+<div class="hidden-md hidden-lg" style="height:50px; width: 100%;"></div>
+
+<div class="container">
+
+    <div id="content" class="col-md-12 col-md-offset-1">
+         <div class="row  hidden-md hidden-lg">
+             <div class="col-md-12 contentPaddingTop"></div>
+         </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="table-responsive" id="headerTableContainer">
+                    <table class="table" id="headerTable">
+                        <tr>
+                            <td>
+                                <div class="col-md-4 hidden-sm hidden-xs">
+                                    <div id="headerImage" class="text-center"><img src="%IMG_LOGO%" class="img-responsive"/></div>
+                                </div>
+                                <div class="col-xs-12 col-md-8 leftColumn" id="headerTitle" >
+                                    <h2 id="pageTitle">%HEADER%</h2>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row">
+
+                <div id="loginNavigation" class="col-md-4 hidden-sm hidden-xs">
+                    %NAVIGATION_MENU%
+                </div>
+
+                <div id="main" class="col-xs-12 col-md-8 leftColumn">
+
+                    <div id="feedback">
+                        <div class="feedbackContent">%FEEDBACK_AREA%</div>
+                    </div>
+                    <div class="mainContent">%MAIN%</div>
+                    <div class="widgetContainer">%MY_ACCOUNT_WIDGET%</div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- top row -->
+    </div>
+
+ </div> <!-- content -->
+<script>
+    $(document).ready(function(){
+        $("input[type!='submit']").parent().css("width","100%");
+        $(".mainContent:empty").hide();
+        $("#actionBtn").addClass("col-xs-12 col-md-4");
+        $('input[type=text],[type=password]').addClass('jq-watermark');
+        $('input[type=text],[type=password]').watermark();
+    });
+</script>
+<script src="%JS_WATERMARK%" type="text/javascript"></script>

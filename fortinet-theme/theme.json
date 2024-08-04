@@ -1,0 +1,867 @@
+{
+    "id": "fortinet.responsive",
+    "public_name": "Fortinet (Responsive Theme)",
+    "description": "Responsive theme for Fortinet with color scheme and logo",
+    "author": "FortiGuest Team",
+    "version": "1.0",
+    "enable_place_holders": true,
+    "use_bootstrap": true,
+    "confirmation_field_below": true,
+    "scripts": [
+        {
+            "tag": "%JS_WATERMARK%",
+            "file_name": "jquery.watermark.min.js"
+        },
+        {
+            "tag": "%JS_QUERY%",
+            "file_name": "jquery-3.7.0.min.js"
+        },
+        {
+            "tag": "%JS_BOOTSTRAP%",
+            "file_name": "bootstrap.min.js"
+        }
+    ],
+    "style_sheets": [
+        {
+            "tag": "%CSS_BOOTSTRAP%",
+            "file_name": "bootstrap.min.css",
+            "is_library": true
+        },
+        {
+            "tag": "%CSS_MAIN%",
+            "file_name": "theme.css",
+            "is_library": false
+        }
+    ],
+    "fonts": [
+        {
+            "tag": "%FONT_MAIN_EOT%",
+            "file_name": "open-sans-v28-latin-regular.eot"
+        },
+        {
+            "tag": "%FONT_MAIN_SVG%",
+            "file_name": "open-sans-v28-latin-regular.svg"
+        },
+        {
+            "tag": "%FONT_MAIN_TTF%",
+            "file_name": "open-sans-v28-latin-regular.ttf"
+        },
+        {
+            "tag": "%FONT_MAIN_WOFF%",
+            "file_name": "open-sans-v28-latin-regular.woff"
+        }
+    ],
+    "high_contrast_palettes": [
+        {
+            "id": "Blue",
+            "label": "Blue high contrast colour scheme",
+            "colours": [
+                {
+                    "tag": "%CL_BODY_BACKGROUND%",
+                    "label": "Body background color",
+                    "value": "#f6f6f6"
+                },
+                {
+                    "tag": "%CL_CONTENT_BACKGROUND%",
+                    "label": "Content background color",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Text Color",
+                    "tag": "%CL_TEXT%",
+                    "value": "#666666"
+                },
+                {
+                    "label": "Input border color",
+                    "tag": "%CL_INPUT_BORDER%",
+                    "value": "#d7d7d7"
+                },
+                {
+                    "label": "Button color",
+                    "tag": "%CL_BUTTON%",
+                    "value": "#000000"
+                },
+                {
+                    "label": "Button gradient color",
+                    "tag": "%CL_BUTTON_GRADIENT%",
+                    "value": "#333333"
+                },
+                {
+                    "label": "Shadow color",
+                    "tag": "%CL_SHADOW%",
+                    "value": "#ededed"
+                },
+                {
+                    "label": "Top bar color",
+                    "tag": "%CL_TOP_BAR%",
+                    "value": "#ee3124"
+                },
+                {
+                    "label": "Vertical spacer color",
+                    "tag": "%CL_VERTICAL_SPACER%",
+                    "value": "#eeeeee"
+                },
+                {
+                    "label": "Link color",
+                    "tag": "%CL_LINK%",
+                    "value": "#ee3124"
+                },
+                {
+                    "label": "Link hover color",
+                    "tag": "%CL_LINK_HOVER%",
+                    "value": "#9a1000"
+                },
+                {
+                    "label": "Table text color",
+                    "tag": "%CL_TABLE_TEXT%",
+                    "value": "#000000"
+                },
+                {
+                    "label": "Table background color",
+                    "tag": "%CL_TABLE_BACKGROUND%",
+                    "value": "#f3f3f3"
+                },
+                {
+                    "label": "Table header text color",
+                    "tag": "%CL_TABLE_HEADER_TEXT%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Table header background color",
+                    "tag": "%CL_TABLE_HEADER_BACKGROUND%",
+                    "value": "#6b6b6b"
+                },
+                {
+                    "label": "AUP reject button color",
+                    "tag": "%CL_AUP_REJECT%",
+                    "value": "#f3f3f3"
+                },
+                {
+                    "label": "AUP reject button gradient color",
+                    "tag": "%CL_AUP_REJECT_GRADIENT%",
+                    "value": "#333333"
+                },
+                {
+                    "label": "Navigation icon",
+                    "tag": "%CL_NAV_ICON%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Mobile navigation separator color",
+                    "tag": "%CL_MOBILE_NAV_SEPARATOR%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Mobile navigation text color",
+                    "tag": "%CL_MOBILE_NAV_TEXT%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Mobile navigation text hover color",
+                    "tag": "%CL_MOBILE_NAV_TEXT_HOVER%",
+                    "value": "#dddddd"
+                },
+                {
+                    "label": "Navigation text color",
+                    "tag": "%CL_NAV_TEXT%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Navigation active text color",
+                    "tag": "%CL_NAV_ACTIVE_TEXT%",
+                    "value": "#000000"
+                },
+                {
+                    "label": "Navigation background color",
+                    "tag": "%CL_NAV_BACKGROUND%",
+                    "value": "#9a1000"
+                },
+                {
+                    "label": "Navigation gradient color",
+                    "tag": "%CL_NAV_GRADIENT%",
+                    "value": "#de6031"
+                },
+                {
+                    "label": "Navigation active background color",
+                    "tag": "%CL_NAV_ACTIVE_BACKGROUND%",
+                    "value": "#e0e0e0"
+                },
+                {
+                    "label": "Navigation active gradient color",
+                    "tag": "%CL_NAV_ACTIVE_GRADIENT%",
+                    "value": "#d8d8d8"
+                }
+            ],
+            "images": [
+                {
+                    "label": "Company logo large",
+                    "description": "Used on the login page on large screen devices",
+                    "tag": "%IMG_LOGO%",
+                    "file_name": "Logo.png",
+                    "dimensions": "300x40"
+                },
+                {
+                    "label": "Company logo medium",
+                    "description": "Used on the login page on small screen devices",
+                    "tag": "%IMG_LOGO_MEDIUM%",
+                    "file_name": "MediumLogo.png",
+                    "dimensions": "170x70"
+                },
+                {
+                    "label": "Company logo small",
+                    "description": "Used on the login page on small screen devices",
+                    "tag": "%IMG_LOGO_SMALL%",
+                    "file_name": "SmallLogo.png",
+                    "dimensions": "170x70"
+                },
+                {
+                    "label": "Apple iOS icon",
+                    "description": "Image used by Apple mobile devices",
+                    "tag": "%IMG_TOUCH_ICON%",
+                    "file_name": "AppleTouchIcon57.png",
+                    "dimensions": "57x57"
+                },
+                {
+                    "label": "Favicon",
+                    "description": "Image to be displayed in browser address bar",
+                    "tag": "%IMG_FAV_ICON%",
+                    "file_name": "Favicon32.ico",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "White Arrow",
+                    "tag": "%IMG_WHITE_ARROW%",
+                    "file_name": "white_arrow.png",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "Black Arrow",
+                    "tag": "%IMG_BLACK_ARROW%",
+                    "file_name": "black_arrow.png",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "Select Box Arrow",
+                    "tag": "%IMG_SELECT_ARROW%",
+                    "file_name": "select_arrow.png",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "Google Login",
+                    "tag": "%IMG_GOOGLE%",
+                    "file_name": "google_44.png",
+                    "dimensions": "44x44"
+                },
+                {
+                    "label": "Twitter Login",
+                    "tag": "%IMG_TWITTER%",
+                    "file_name": "twitter_48.png",
+                    "dimensions": "48x48"
+                },
+                {
+                    "label": "Facebook Login",
+                    "tag": "%IMG_FACEBOOK%",
+                    "file_name": "facebook_50.png",
+                    "dimensions": "50x50"
+                }
+            ]
+        }
+    ],
+    "standard_palettes": [
+        {
+            "id": "Fortinet",
+            "label": "Fortinet default colours and images",
+            "colours": [
+                {
+                    "tag": "%CL_BODY_BACKGROUND%",
+                    "label": "Body background color",
+                    "value": "#f6f6f6"
+                },
+                {
+                    "tag": "%CL_CONTENT_BACKGROUND%",
+                    "label": "Content background color",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Text Color",
+                    "tag": "%CL_TEXT%",
+                    "value": "#666666"
+                },
+                {
+                    "label": "Input border color",
+                    "tag": "%CL_INPUT_BORDER%",
+                    "value": "#d7d7d7"
+                },
+                {
+                    "label": "Button color",
+                    "tag": "%CL_BUTTON%",
+                    "value": "#000000"
+                },
+                {
+                    "label": "Button gradient color",
+                    "tag": "%CL_BUTTON_GRADIENT%",
+                    "value": "#333333"
+                },
+                {
+                    "label": "Shadow color",
+                    "tag": "%CL_SHADOW%",
+                    "value": "#ededed"
+                },
+                {
+                    "label": "Top bar color",
+                    "tag": "%CL_TOP_BAR%",
+                    "value": "#ee3124"
+                },
+                {
+                    "label": "Vertical spacer color",
+                    "tag": "%CL_VERTICAL_SPACER%",
+                    "value": "#eeeeee"
+                },
+                {
+                    "label": "Link color",
+                    "tag": "%CL_LINK%",
+                    "value": "#ee3124"
+                },
+                {
+                    "label": "Link hover color",
+                    "tag": "%CL_LINK_HOVER%",
+                    "value": "#9a1000"
+                },
+                {
+                    "label": "Table text color",
+                    "tag": "%CL_TABLE_TEXT%",
+                    "value": "#000000"
+                },
+                {
+                    "label": "Table background color",
+                    "tag": "%CL_TABLE_BACKGROUND%",
+                    "value": "#f3f3f3"
+                },
+                {
+                    "label": "Table header text color",
+                    "tag": "%CL_TABLE_HEADER_TEXT%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Table header background color",
+                    "tag": "%CL_TABLE_HEADER_BACKGROUND%",
+                    "value": "#6b6b6b"
+                },
+                {
+                    "label": "AUP reject button color",
+                    "tag": "%CL_AUP_REJECT%",
+                    "value": "#f3f3f3"
+                },
+                {
+                    "label": "AUP reject button gradient color",
+                    "tag": "%CL_AUP_REJECT_GRADIENT%",
+                    "value": "#333333"
+                },
+                {
+                    "label": "Navigation icon",
+                    "tag": "%CL_NAV_ICON%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Mobile navigation separator color",
+                    "tag": "%CL_MOBILE_NAV_SEPARATOR%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Mobile navigation text color",
+                    "tag": "%CL_MOBILE_NAV_TEXT%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Mobile navigation text hover color",
+                    "tag": "%CL_MOBILE_NAV_TEXT_HOVER%",
+                    "value": "#dddddd"
+                },
+                {
+                    "label": "Navigation text color",
+                    "tag": "%CL_NAV_TEXT%",
+                    "value": "#ffffff"
+                },
+                {
+                    "label": "Navigation active text color",
+                    "tag": "%CL_NAV_ACTIVE_TEXT%",
+                    "value": "#000000"
+                },
+                {
+                    "label": "Navigation background color",
+                    "tag": "%CL_NAV_BACKGROUND%",
+                    "value": "#9a1000"
+                },
+                {
+                    "label": "Navigation gradient color",
+                    "tag": "%CL_NAV_GRADIENT%",
+                    "value": "#de6031"
+                },
+                {
+                    "label": "Navigation active background color",
+                    "tag": "%CL_NAV_ACTIVE_BACKGROUND%",
+                    "value": "#e0e0e0"
+                },
+                {
+                    "label": "Navigation active gradient color",
+                    "tag": "%CL_NAV_ACTIVE_GRADIENT%",
+                    "value": "#d8d8d8"
+                }
+            ],
+            "images": [
+                {
+                    "label": "Company logo large",
+                    "description": "Used on the login page on large screen devices",
+                    "tag": "%IMG_LOGO%",
+                    "file_name": "Logo.png",
+                    "dimensions": "300x40"
+                },
+                {
+                    "label": "Company logo medium",
+                    "description": "Used on the login page on small screen devices",
+                    "tag": "%IMG_LOGO_MEDIUM%",
+                    "file_name": "MediumLogo.png",
+                    "dimensions": "170x70"
+                },
+                {
+                    "label": "Company logo small",
+                    "description": "Used on the login page on small screen devices",
+                    "tag": "%IMG_LOGO_SMALL%",
+                    "file_name": "SmallLogo.png",
+                    "dimensions": "170x70"
+                },
+                {
+                    "label": "Apple iOS icon",
+                    "description": "Image used by Apple mobile devices",
+                    "tag": "%IMG_TOUCH_ICON%",
+                    "file_name": "AppleTouchIcon57.png",
+                    "dimensions": "57x57"
+                },
+                {
+                    "label": "Favicon",
+                    "description": "Image to be displayed in browser address bar",
+                    "tag": "%IMG_FAV_ICON%",
+                    "file_name": "Favicon32.ico",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "White Arrow",
+                    "tag": "%IMG_WHITE_ARROW%",
+                    "file_name": "white_arrow.png",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "Black Arrow",
+                    "tag": "%IMG_BLACK_ARROW%",
+                    "file_name": "black_arrow.png",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "Select Box Arrow",
+                    "tag": "%IMG_SELECT_ARROW%",
+                    "file_name": "select_arrow.png",
+                    "dimensions": "32x32"
+                },
+                {
+                    "label": "Google Login",
+                    "tag": "%IMG_GOOGLE%",
+                    "file_name": "google_44.png",
+                    "dimensions": "44x44"
+                },
+                {
+                    "label": "Twitter Login",
+                    "tag": "%IMG_TWITTER%",
+                    "file_name": "twitter_48.png",
+                    "dimensions": "48x48"
+                },
+                {
+                    "label": "Facebook Login",
+                    "tag": "%IMG_FACEBOOK%",
+                    "file_name": "facebook_50.png",
+                    "dimensions": "50x50"
+                }
+            ]
+        }
+    ],
+    "mandatory_pages": {
+        "login": {
+            "menu_item_weight": 1,
+            "label": "Login",
+            "allow_post_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "aup": {
+            "label": "Acceptable Usage Policy",
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Acceptable Usage Policy"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%",
+                    "content": "By clicking \"Accept\" you agree to the terms and conditions....."
+                }
+            ]
+        },
+        "password_change": {
+            "menu_item_weight": 1,
+            "label": "Password Change",
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Reset Password"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "password_recovery": {
+            "label": "Password Recovery",
+            "allow_post_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Password Recovery"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Password Recovery"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "self_service": {
+            "menu_item_weight": 10,
+            "label": "Self Service",
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Create your account"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "device_registration": {
+            "menu_item_weight": 10,
+            "label": "Device Registration",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Register your device"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "credit_card_billing": {
+            "menu_item_weight": 10,
+            "label": "CC Billing",
+            "allow_pre_auth": true,
+            "allow_post_auth": true,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Purchase your account"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "pms_billing": {
+            "menu_item_weight": 0,
+            "label": "PMS Billing",
+            "allow_pre_auth": true,
+            "allow_post_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "success": {
+            "menu_item_weight": 0,
+            "label": "Success",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Authentication successful"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%",
+                    "content": "Authentication successful, you are connected to the network."
+                }
+            ]
+        },
+        "welcome_back": {
+            "menu_item_weight": 0,
+            "label": "Welcome Back",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Welcome back"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%",
+                    "content": "Authentication successful, you are connected to the network."
+                }
+            ]
+        },
+        "logout": {
+            "menu_item_weight": 0,
+            "label": "Logout",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Logout"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%",
+                    "content": "Logout by clicking the button, thank you for using our network."
+                }
+            ]
+        },
+        "logged_out": {
+            "menu_item_weight": 0,
+            "label": "Logged Out",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "You have logged out of the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "You have logged out of the network"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "smart_connect": {
+            "label": "SmartConnect",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Client configuration instructions"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Connect to the secure network"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "access_without_login": {
+            "menu_item_weight": 0,
+            "label": "Click Through",
+            "allow_post_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Login to the network"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Purchase your account"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "my_account": {
+            "menu_item_weight": 10,
+            "label": "My Account",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "My Account"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "My Account"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        },
+        "session_management": {
+            "label": "Session Management",
+            "allow_pre_auth": false,
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Session management"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%"
+                }
+            ]
+        }
+    },
+    "optional_pages": [
+        {
+            "menu_item_weight": 10000,
+            "label": "Help",
+            "description": "Help page, can contain help content for site users",
+            "id": "help",
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Help"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Help"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%",
+                    "content": "Help"
+                }
+            ]
+        },
+		{
+            "menu_item_weight": 1000,
+            "label": "Welcome",
+            "id": "welcome",
+            "description": "Welcome page, can be used as alternative landing page to portal",
+            "components": [
+                {
+                    "label": "Title",
+                    "tag": "%TITLE%",
+                    "content": "Welcome"
+                },
+                {
+                    "label": "Header",
+                    "tag": "%HEADER%",
+                    "content": "Welcome"
+                },
+                {
+                    "label": "Main",
+                    "tag": "%MAIN%",
+                    "content": "Welcome"
+                }
+            ]
+        }
+    ]
+}

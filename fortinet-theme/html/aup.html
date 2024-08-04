@@ -1,0 +1,68 @@
+<nav class="navbar navbar-default hidden-sm hidden-xs" role="navigation">
+    <div class="topBar"></div>
+</nav>
+
+<nav class="navbar navbar-default hidden-xs hidden-md hidden-lg" role="navigation">
+    <div class="topBar"></div>
+    <div class="navbar-brand"><img src="%IMG_LOGO_MEDIUM%" class="img-responsive"/></div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-md hidden-lg mobileNav" role="navigation">
+    <div class="navbar-brand"><img src="%IMG_LOGO_SMALL%" class="img-responsive"/></div>
+</nav>
+
+<div class="hidden-md hidden-lg" style="height:50px; width: 100%;"></div>
+
+<div class="container">
+
+    <div id="content" class="col-md-12 col-md-offset-1">
+
+        <div class="row  hidden-md hidden-lg">
+            <div class="col-md-12 contentPaddingTop"></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="table-responsive" id="headerTableContainer">
+                        <table class="table" id="headerTable">
+                            <tr>
+                                <td>
+                                    <div class="col-md-12 hidden-sm hidden-xs">
+                                        <div id="headerImage" class="text-center"><img src="%IMG_LOGO%" class="img-responsive"/></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div id="main" class="col-xs-12 col-md-12 leftColumn">
+                         <h2 id="aupTitle" class="text-center">%HEADER%</h2>
+                        <div id="feedback">
+                            <div class="feedbackContent">%FEEDBACK_AREA%</div>
+                        </div>
+                        <div class="mainContent">%MAIN%</div>
+                        <div class="widgetContainer">%AUP_WIDGET%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ </div>
+
+<script>
+    $(document).ready(function(){
+        $("input[type!='submit']").parent().css("width","100%");
+        $(".mainContent:empty").hide();
+        $(".widgetContainer").addClass('text-center');
+//        $("input[type='submit']").addClass("col-xs-12 col-md-5");
+    });
+</script>

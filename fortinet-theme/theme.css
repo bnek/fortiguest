@@ -1,0 +1,478 @@
+@font-face {
+    font-family: 'SourceSansProRegular';
+    src: url('%FONT_MAIN_EOT%?') format('eot');
+    src: local('☺'),
+        url('%FONT_MAIN_WOFF%') format('woff'),
+        url('%FONT_MAIN_TTF%') format('truetype'),
+        url('%FONT_MAIN_SVG%#SourceSansProRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2215;
+}
+
+body {
+    background-color: %CL_BODY_BACKGROUND%;
+    font-family: SourceSansProRegular;
+    font-size: large;
+    color: %CL_TEXT%;
+}
+
+* {
+    font-family: SourceSansProRegular;
+}
+
+#content{
+    background-color: %CL_CONTENT_BACKGROUND%;
+    margin: auto;
+    margin-top:3%;
+    box-shadow: 5px 5px 5px %CL_SHADOW%;
+    padding: 2%;
+    min-height: 750px;
+}
+
+.topBar {
+    background-color: %CL_TOP_BAR%;
+    width: 100%;
+    height:10px;
+}
+
+div.themeLabel {
+    display:none;
+}
+
+#displayCredentials .themeLabel{
+    display:inline;
+}
+
+label.rememberMe{
+    display: inline;
+}
+
+
+
+.leftColumn {
+/*    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: %CL_VERTICAL_SPACER%;
+    padding-left:50px;*/
+}
+
+.contentPaddingTop {
+    padding-top:70px;
+}
+
+.navbar-fixed-top {
+    border-width: 0px;
+    background-color: %CL_BODY_BACKGROUND%;
+}
+
+.nav li {
+    margin-bottom:15px;
+}
+
+
+.nav-pills>li {
+     border-radius: 2px;
+}
+
+.nav-pills>li>a {
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, %CL_NAV_BACKGROUND%;
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -webkit-gradient(linear, left top, left bottom, from(%CL_NAV_BACKGROUND%), to(%CL_NAV_GRADIENT%));
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -webkit-linear-gradient(%CL_NAV_BACKGROUND%, %CL_NAV_GRADIENT%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -moz-linear-gradient(top, %CL_NAV_BACKGROUND%, %CL_NAV_GRADIENT%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -ms-linear-gradient(%CL_NAV_BACKGROUND%, %CL_NAV_GRADIENT%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -o-linear-gradient(%CL_NAV_BACKGROUND%, %CL_NAV_GRADIENT%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, linear-gradient(to top right, %CL_NAV_BACKGROUND%, %CL_NAV_GRADIENT%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='%CL_NAV_BACKGROUND%', endColorstr='%CL_NAV_GRADIENT%');
+    zoom: 1;
+    color:%CL_NAV_TEXT%;
+    text-transform: uppercase;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:medium;
+}
+
+.nav-pills>li>a:hover {
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, %CL_NAV_BACKGROUND%;
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -webkit-gradient(linear, left top, left bottom, from(%CL_NAV_GRADIENT%), to(%CL_NAV_BACKGROUND%)));
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -webkit-linear-gradient(%CL_NAV_GRADIENT%, %CL_NAV_BACKGROUND%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -moz-linear-gradient(top, %CL_NAV_GRADIENT%, %CL_NAV_BACKGROUND%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -ms-linear-gradient(%CL_NAV_GRADIENT%, %CL_NAV_BACKGROUND%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, -o-linear-gradient(%CL_NAV_GRADIENT%, %CL_NAV_BACKGROUND%);
+    background: url(%IMG_WHITE_ARROW%) no-repeat 15px 50%, linear-gradient(to top right, %CL_NAV_GRADIENT%, %CL_NAV_BACKGROUND%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='%CL_NAV_GRADIENT%', endColorstr='%CL_NAV_BACKGROUND%');
+    zoom: 1;
+
+}
+
+.nav-pills>li.active>a {
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, %CL_NAV_ACTIVE_BACKGROUND%;
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -webkit-gradient(linear, left top, left bottom, from(%CL_NAV_ACTIVE_BACKGROUND%), to(%CL_NAV_ACTIVE_GRADIENT%));
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -webkit-linear-gradient(%CL_NAV_ACTIVE_BACKGROUND%, %CL_NAV_ACTIVE_GRADIENT%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -moz-linear-gradient(top, %CL_NAV_ACTIVE_BACKGROUND%, %CL_NAV_ACTIVE_GRADIENT%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -ms-linear-gradient(%CL_NAV_ACTIVE_BACKGROUND%, %CL_NAV_ACTIVE_GRADIENT%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -o-linear-gradient(%CL_NAV_ACTIVE_BACKGROUND%, %CL_NAV_ACTIVE_GRADIENT%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, linear-gradient(to top right, %CL_NAV_ACTIVE_BACKGROUND%, %CL_NAV_ACTIVE_GRADIENT%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='%CL_NAV_ACTIVE_BACKGROUND%', endColorstr='%CL_NAV_ACTIVE_GRADIENT%');
+    zoom: 1;
+    color:%CL_NAV_ACTIVE_TEXT%;
+}
+
+.nav-pills>li.active>a:hover {
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, %CL_NAV_ACTIVE_BACKGROUND%;
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -webkit-gradient(linear, left top, left bottom, from(%CL_NAV_ACTIVE_GRADIENT%), to(%CL_NAV_ACTIVE_BACKGROUND%)));
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -webkit-linear-gradient(%CL_NAV_ACTIVE_GRADIENT%, %CL_NAV_ACTIVE_BACKGROUND%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -moz-linear-gradient(top, %CL_NAV_ACTIVE_GRADIENT%, %CL_NAV_ACTIVE_BACKGROUND%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -ms-linear-gradient(%CL_NAV_ACTIVE_GRADIENT%, %CL_NAV_ACTIVE_BACKGROUNDD%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, -o-linear-gradient(%CL_NAV_ACTIVE_GRADIENT%, %CL_NAV_ACTIVE_BACKGROUND%);
+    background: url(%IMG_BLACK_ARROW%) no-repeat 15px 50%, linear-gradient(to top right, %CL_NAV_ACTIVE_GRADIENT%, %CL_NAV_ACTIVE_BACKGROUND%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='%CL_NAV_ACTIVE_GRADIENT%', endColorstr='%CL_NAV_ACTIVE_BACKGROUND%');
+    zoom: 1;
+    color:%CL_NAV_ACTIVE_TEXT%;
+}
+
+.navbar-right>li {
+    margin-right:20px;
+}
+
+.navbar-default .navbar-right>li>a {
+    color:%CL_TEXT%;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: %CL_VERTICAL_SPACER%;
+    margin-top: 10px;
+    padding:0px 10px 0px 10px;
+}
+
+.mobileNav {
+    background-color: %CL_TOP_BAR%;
+}
+
+.navigationMenuContainer li.menuEntry, .navigationMenuContainer li.selectedMenuEntry  {
+}
+
+.mobileNav li.menuEntry {
+    border-color: %CL_MOBILE_NAV_BORDER%;
+    border-style: solid;
+    border-width: 0 0 1px;
+    padding-bottom: 5px;
+    margin-bottom:0px;
+}
+
+.mobileNav li.menuEntry:last-child {
+    border-width: 0px;
+    padding-bottom: 0px;
+}
+
+.mobileNav li.menuEntry > a {
+    color:%CL_MOBILE_NAV_TEXT%;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:10px;
+    margin-bottom:0px;
+}
+
+.mobileNav li.menuEntry > a:hover {
+    color:%CL_MOBILE_NAV_TEXT_HOVER%;
+}
+
+#navbarCollapse {
+    border-color:%CL_MOBILE_NAV_SEPARATOR%;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: %CL_NAV_ICON%;
+}
+
+.navbar-default .navbar-toggle {
+    border:none;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+ul.nav.navbar-nav.navigationBar{
+    margin-top:20px;
+}
+
+.themeLabel, .themeLabel label{
+    font-weight:normal;
+}
+
+textarea, input {
+    text-indent: 1px;
+    width:100%;
+    height:50px;
+    border-radius: 6px;
+    margin-bottom:5px;
+    font-size: large;
+    font-style: italic;
+    color:%CL_TEXT%;
+}
+
+textarea, input[type="password"], input[type="text"], input[type="email"] {
+    padding-left:15px;
+    padding-right:15px;
+    border-width:1px;
+    border-style:solid;
+    border-color:%CL_INPUT_BORDER%;
+}
+input[type="checkbox"] {
+    width:20px;
+    height:15px;
+}
+
+input[type="submit"],#printBt {
+    background-color:%CL_BUTTON%;
+    background: linear-gradient(to top  right,%CL_BUTTON%, %CL_BUTTON_GRADIENT%);
+    border-style:none;
+    color:%CL_CONTENT_BACKGROUND%;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom:20px;
+    font-size:large;
+    text-transform:uppercase;
+    white-space: normal;
+}
+
+input[type="submit"]:active,#printBt:active {
+    background: linear-gradient(to top  right,%CL_BUTTON_GRADIENT%, %CL_BUTTON%);
+}
+
+input[name="cmd_showTopUp"] {
+    width:200px;
+    font-size: large;
+    float:right;
+    height:50px;
+}
+
+#headerImage {
+    margin:20px;
+}
+
+select {
+    padding:3px;
+    margin: 0;
+    border-width: 1px;
+    border-style:solid;
+    border-color:%CL_INPUT_BORDER%;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+    cursor:pointer;
+    width:100%;
+    height:50px;
+    border-radius: 6px;
+    margin-bottom:5px;
+    font-size: large;
+    color:%CL_TEXT%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background:url(%IMG_SELECT_ARROW%) 98% 50% no-repeat;
+    /*hide background and just use the built in style on IE 9 or less*/
+    #background: none;
+    font-style:italic;
+    text-indent: 1px;
+    text-overflow: "";
+}
+
+/*hide native ie select box style*/
+select::-ms-expand
+{
+    display: none;
+}
+
+a {
+    color:%CL_LINK%;
+}
+
+a:hover {
+    color:%CL_LINK_HOVER%;
+    text-decoration: none;
+}
+
+.passwordRecoveryLinkContainer
+{
+    text-align: right;
+}
+
+.widgetContainer table {
+    width:100%;
+}
+
+div#feedback {
+    margin-left:6px;
+}
+
+#cmd_acceptAup, #cmd_rejectAup {
+    width:46%;
+    margin-right:1%;
+    margin-left: 1%;
+}
+
+#cmd_rejectAup {
+    background: linear-gradient(to top  right,%CL_AUP_REJECT%, %CL_AUP_REJECT_GRADIENT%);
+}
+
+.mainContent, .clientConfigWidgetContainer, .timeLeftWidgetContainer {
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom:25px;
+}
+
+#expirationMonth {
+    width:40%;
+}
+
+#expirationYear {
+    width:54%;
+}
+
+#headerTable td {
+    border:none;
+    vertical-align: middle;
+    overflow: none;
+}
+
+#headerTable {
+    overflow: none;
+}
+#headerTableContainer {
+    overflow: hidden;
+    border:none;
+}
+
+#headerTitle {
+    position: absolute;
+    right: 0;
+    height:100%;
+}
+#pageTitle{
+    position:absolute;
+    bottom:25%;
+    margin-left:6px;
+}
+
+table.transactionDetails th {
+    background-color: %CL_TABLE_HEADER_BACKGROUND%;
+    color:%CL_TABLE_HEADER_TEXT%;
+    border-width:0px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size: medium;
+}
+
+table.transactionDetails td {
+    padding:5px 20px 2px;
+    color:%CL_TABLE_TEXT%;
+    background-color: %CL_TABLE_BACKGROUND%;
+    text-align:left;
+    font-size:small;
+}
+
+table.transactionDetails input[type="button"], table.userDetails input[type="button"],
+table.transactionDetails input[type="submit"], table.userDetails input[type="submit"]{
+    background:none;
+    border-style:none;
+    color:%CL_LINK%;
+    font-style: normal;
+    height:auto;
+    font-size: large;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    margin:0px;
+    text-transform: none;
+}
+
+table.userDetails input[type="submit"]{
+    width:auto;
+    font-size: small;
+}
+
+.tableSpacer {
+    height:20px;
+}
+
+table.userDetails td {
+    border-style: solid;
+    border-width: 0px;
+    font-size: small;
+}
+
+table.userDetails td.tableLabel {
+    vertical-align: top;
+}
+table.userDetails td.tableLabel {
+    font-size:medium;
+}
+
+table.accountDetails td {
+    vertical-align: middle;
+    font-size: small;
+}
+
+table.accountDetails td.tableLabel {
+    font-size:medium;
+}
+
+div.timezone {
+    font-size: x-small;
+    font-style: italic;
+}
+
+.themeInputValueAsText {
+
+    padding-left: 15px;
+    padding-right:15px;
+    font-size: xx-large;
+}
+
+td.themeEmptyCell{
+    width:1px;
+    overflow: hidden;
+}
+
+h2 {
+    margin-left:13px;
+}
+
+#actionBtn {
+    float:right;
+    margin:0px;
+    padding:0px;
+    width:none;
+}
+
+span.dateSeparator {
+    font-size: xx-large;
+}
+.navbar.navbar-default.hidden-xs.hidden-md.hidden-lg .navbar-nav>.active>a {
+    background-color: %CL_BODY_BACKGROUND%;
+    text-decoration: underline;
+}
+
+#displayCredentials {
+    margin-left:6px;
+}
+
+.noLink{
+    display:none !important;
+}
+
+ol {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+ol li {
+    margin-bottom:10px;
+}
+
+.socialLoginContainer {
+    width:50px;
+    height:50px;
+    display:inline-block;
+    margin-right:10px;
+}
