@@ -1,9 +1,9 @@
 {
-    "id": "fortinet.responsive",
-    "public_name": "Fortinet (Responsive Theme)",
-    "description": "Responsive theme for Fortinet with color scheme and logo",
-    "author": "FortiGuest Team",
-    "version": "1.0",
+    "id": "cac.responsive2.3",
+    "public_name": "CAC (Responsive Theme) 2.3",
+    "description": "Responsive theme for CAC with logo",
+    "author": "Datahaus Team",
+    "version": "2.3",
     "enable_place_holders": true,
     "use_bootstrap": true,
     "confirmation_field_below": true,
@@ -267,7 +267,7 @@
                 {
                     "label": "School Background",
                     "tag": "%IMG_SCHOOL_BACKGROUND%",
-                    "file_name": "CAC-Ariel.jpg",
+                    "file_name": "cac-background.png",
                     "dimensions": "1920x1080"
                 }
             ]
@@ -485,6 +485,12 @@
                     "tag": "%IMG_FACEBOOK%",
                     "file_name": "facebook_50.png",
                     "dimensions": "50x50"
+                },
+                {
+                    "label": "School Background",
+                    "tag": "%IMG_SCHOOL_BACKGROUND%",
+                    "file_name": "cac-background.png",
+                    "dimensions": "1920x1080"
                 }
             ]
         }
